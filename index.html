@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="h-screen flex relative">
+        <!-- SideBar screen -->
+        <div class="w-64 overflow-auto bg-black">
+            <button class="px-2 py-3">
+                <svg class="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                </svg>
+            </button>
+            <a href="#" class="flex gap-6 px-4 mb-2 group">
+                <svg class="h-6 w-6 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                <span class="text-gray-400 group-hover:text-white font-medium">Home</span>
+            </a>
+            <a href="#" class="flex gap-6 px-4 mb-2 group">
+                <svg class="h-6 w-6 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <span class="text-gray-400 group-hover:text-white font-medium">Search</span>
+            </a>
+            <a href="#" class="flex gap-6 px-4 group">
+                <svg class="h-5 w-5 text-gray-400 group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M2 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V4zM8 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H9a1 1 0 01-1-1V4zM15 3a1 1 0 00-1 1v12a1 1 0 001 1h2a1 1 0 001-1V4a1 1 0 00-1-1h-2z" />
+                </svg>
+                <span class="text-gray-400 group-hover:text-white font-medium">Your Library</span>
+            </a>
+            <a href="#" class="flex gap-6 px-4 mt-6 group">
+                <svg  class="h-6 w-6 text-gray-400 group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-400 group-hover:text-white font-medium">Create Playlist</span>
+            </a>
+            <a href="#" class="flex items-center gap-2 mt-1 group">
+                <div class="mx-4 my-2 w-6 h-6 bg-indigo-600 flex justify-center items-center">
+                    <svg class="h-5 w-5 text-gray-400 group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <span class="text-gray-400 group-hover:text-white font-medium">Liked Songs</span>
+            </a>
+            <a href="#" class="flex items-center gap-2 mt-1 group">
+                <div class="mx-4 my-2 w-6 h-6 group-hover:bg-green-500 bg-green-600 flex justify-center items-center">
+                <svg  class="h-5 w-5 text-gray-400 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z" />
+                </svg>
+                </div>
+                <span class="text-gray-400 font-medium group-hover:text-white">Your Episodes</span>
+            </a>
+            <div class="mt-2 border font-thin border-gray-400 mx-4"></div>
+            <div class="mx-4 font-medium mt-2">
+                <button class="text-gray-400 text-sm hover:text-white">
+                    My Playlist #1
+                </button>
+            </div>
+            <div class="mx-4 font-medium mt-2">
+                <button class="text-gray-400 text-sm hover:text-white">
+                    Dr.Joe Dispenza: Podcast
+                </button>
+            </div>
+            <div class="mx-4 font-medium mt-2">
+                <button class="text-gray-400 text-sm hover:text-white">
+                    lofi beats
+                </button>
+            </div>
+        </div>
+        <!-- MainScreen -->
+        <div class="flex-1 min-w-0 flex flex-col bg-black overflow-auto">
+            <div class="bg-gradient-to-b from-gray-900 to-black pb-1">
+                <nav class="py-4 px-8 flex justify-between">
+                    <!-- The two forward and back button -->
+                    <div class="flex gap-4">
+                        <a href="" class="w-8 h-8 rounded-full bg-gray-800 hover:text-black transform hover:scale-110 flex justify-center items-center">
+                            <svg class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </a>
+                        <a href="" class="w-8 h-8 rounded-full bg-gray-800 hover:text-black transform hover:scale-110 flex justify-center items-center">
+                            <svg class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- owners username and image -->
+                    <div class="px-2 w-28 h-8 bg-black rounded-2xl hover:bg-gray-900 flex items-center gap-1">
+                        <div class="flex justify-center items-center h-6 w-6 rounded-full bg-gray-700 p-1">
+                            <svg class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <span class="text-gray-300 font-bold text-sm">
+                            josh254
+                        </span>
+                        <svg class="h-6 w-6 text-gray-300 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </nav>
+                <div class="mx-8 flex items-center gap-3">
+                    <img class="h-48 w-56 object-cover gap-1 flex-shrink-0" src="/image/lofi.jpg" alt="lofigirl">
+                    <div class="flex flex-col items-baseline">
+                        <h3 class="text-sm text-gray-300 font-bold mt-4">Album</h3>
+                        <p class="text-6xl text-white font-bold mb-4">Back of My Mind</p>
+                        <div class="flex items-center">
+                            <img class="h-5 w-5 rounded-full" src="/image/lofi.jpg" alt="lofigirl">
+                            <span class="font-bold text-gray-300">H.E.R</span>
+                            <span class="font-bold text-gray-600">,2021</span>
+                            <span class="font-bold text-gray-600">,21 songs</span>
+                            <span class="font-bold text-gray-600">,1hr 19min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Button below -->
+            <div class="flex mt-4 px-8 py-2 gap-4 items-center">
+                <div class="group">
+                    <div class="flex justify-center items-center h-10 w-10 rounded-full p-3 bg-green-500 group-hover:bg-green-600 transform hover:scale-110">
+                        <svg class="h-12 w-18" viewBox="0 0 16 19" fill="none">
+                            <path d="M0 0V21L17 10.5L0 0Z" fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <svg class="h-8 w-8 text-gray-400 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                <svg class="h-8 w-8 text-gray-400 hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" stroke-width="1"
+                        d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg class="h-8 w-8 text-gray-400 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                </svg>
+            </div>
+            <!-- Table of music -->
+            <div class="px-8 mt-4 sticky">
+                <table class="table-auto min-w-full">
+                    <thead>
+                        <tr class="">
+                            <th class="pb-3 text-gray-400 text-left uppercase border-b-2 border-gray-400  font-semibold"># TITLE</th>
+                            <th class="pb-3 text-gray-400 text-justify uppercase border-b-2 border-gray-400  font-semibold">Plays</th>
+                            <th class="pb-3 text-gray-400 text-center uppercase border-b-2 border-gray-400  font-semibold">
+                                <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td class="pb-2 pt-2">
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">1.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">We Made It</h2>
+                                        <h3 class="text-gray-400">H.E.R</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pb-2">
+                                <h2 class="text-gray-400 hover:underline">3,288,546</h2>
+                            </td>
+                            <td class="pb-2">
+                                <h2 class="text-gray-400 hover:underline">2:43</h2>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">2.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">Back of My Mind (feat. Ty Dollar $ign)</h2>
+                                        <h3 class="text-gray-400">H.E.R, Ty Dollar $ign</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">2,128,546</h2>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">3:13</h2>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">3.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">Trauma (feat. Cordee)</h2>
+                                        <h3 class="text-gray-400">H.E.R, Cordee</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">4,288,546</h2>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">2:33</h2>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">4.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">Damage</h2>
+                                        <h3 class="text-gray-400">H.E.R</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">4,768,146</h2>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">3:03</h2>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">5.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">Find a Way(feat. Lil baby)</h2>
+                                        <h3 class="text-gray-400">H.E.R, Lil baby</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">3,288,546</h2>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">2:43</h2>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">6.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">Hard Place</h2>
+                                        <h3 class="text-gray-400">H.E.R</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">2,288,163</h2>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">4:35</h2>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">7.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">Come Through(feat. Chris Brown)</h2>
+                                        <h3 class="text-gray-400">H.E.R, Chris Brown</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">3,288,546</h2>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">2:43</h2>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 hover:bg-clip-border">
+                            <td>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <span class="text-gray-400">8.</span>
+                                    <div>
+                                        <h2 class="text-gray-300">Slide(feat. YG)</h2>
+                                        <h3 class="text-gray-400">H.E.R, YG</h3>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">4,578,646</h2>
+                            </td>
+                            <td>
+                                <h2 class="text-gray-400 hover:underline">4:17</h2>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="flex gap-4 items-center absolute inset-x-0 bottom-0 h-16 bg-gray-900">
+            <div class="ml-2 my-2 bg-red-500 h-12 w-12">
+                <img class="h-12 w-12" src="/image/lofi.jpg" alt="lofigirl">    
+            </div>
+            <div class="group">
+                <h2 class="text-gray-300 group-hover:text-white">Back of My Mind (feat. Ty Dollar $ign)</h2>
+                <h3 class="text-gray-400 group-hover:text-gray-300">H.E.R, Ty Dollar $ign</h3>
+            </div>
+            <span class="">
+                <svg class=" gap-2 h-6 w-6 text-gray-400 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
